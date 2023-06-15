@@ -32,7 +32,8 @@ firebase_config = {
 }
 
 # Initialize Firebase SDK
-cred = credentials.Certificate('./db-setup/firebase-key.json')
+# cred = credentials.Certificate('db-setup/firebase-key.json')
+cred = credentials.Certificate('keyfile.json')
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
